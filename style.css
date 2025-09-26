@@ -247,3 +247,17 @@ header .wrap .text h1 {
 #about {
     padding-top: 30rem;
 }
+#about .wrap .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+#about .wrap .cards .card{
+    display: flex;
+}
+#about .wrap .cards .card .text {
+    width: 69.7%;
+}
+#about .wrap .cards .card2 {
+    flex-direction: row-reverse;
+}
