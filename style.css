@@ -67,3 +67,183 @@ h1, h2, h3, h4, h5, h6 {
     font-size: normal;
     font-weight: 400;
 }
+:root{
+    --jaune : #ffcd05;
+    --noir : #0a0500;
+    --gris: #f7f7f7;
+}
+.wrap {max-width: 1400px; width:100%; margin: 0 auto;}
+header .image{
+    height: 100vh;
+    width: auto;
+    position: relative;
+}
+header .image img {
+    filter: brightness(50%);
+}
+header .wrap .nav_bar {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    max-width: 1400px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+header .wrap .nav_bar svg{
+    width: 15%;
+}
+header .wrap .nav_bar .liens{
+    height: 100%;
+}
+header .wrap .nav_bar .liens nav{
+    height: 100%;
+}
+header .wrap .nav_bar .liens nav ul {
+    display: flex;
+    color :grey;
+}
+header .wrap .nav_bar .liens nav ul li a {
+  display: flex;           
+  height: 100%;            
+  padding: 2rem;           
+}
+header .wrap .nav_bar .liens nav ul li a:hover{
+    background-color: var(--jaune);
+    color: var(--noir);
+    transition: 0.4s;
+}
+
+header .wrap .nav_bar .infos {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    gap: 1rem;
+}
+header .wrap .nav_bar .infos p span {
+    font-weight: bold;
+}
+header .wrap .nav_bar .infos i {color: grey;}
+
+header .wrap .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+header .wrap .text h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
+#services{
+    background-color: var(--noir);
+    position: relative;
+}
+#services .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+#services .wrap .formulaire {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem;
+    width: 100%;
+    max-width: 1400px;
+    gap: 2rem;
+    position: absolute;
+    top: -20%;
+}
+#services .wrap .formulaire h2 {
+    font-weight: bold;
+}
+#services .wrap .formulaire form{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    
+}
+#services .wrap .formulaire form input, #services .wrap .formulaire form select{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    background-color: var(--gris);
+    
+}
+#services .wrap .formulaire form #submit {
+    background-color: var(--noir);
+    color: white;
+}
+#services .wrap .titles {
+    color: white;
+    padding: 20rem 0 10rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#services .wrap .titles h2{
+    font-weight: bold;
+    font-size: 44px;
+}
+#services .wrap .titles p {
+    font-size: 22px;
+    width: 67%;
+    color: var(--gris);
+    font-family: 'sen';
+}
+#services .wrap .content {
+    position: absolute;
+    bottom: -50%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#services .wrap .cards {
+    display: flex;
+    gap: 2rem;
+}
+#services .wrap .cards .card{
+    background-color: white;
+    border: solid 1px var(--gris);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 3rem;
+    gap: 1rem;
+    text-align: center;
+}
+#services .wrap .cards .card h3, #services .wrap .cards .card span{
+    font-weight: bold;
+}
+#services .wrap .cards .card span{
+    padding-top: 1rem;
+}
+#services .wrap .content .buttons{
+    display: flex;
+    gap: 2rem;
+}
+#services .wrap .content .buttons a {
+    padding: 1rem 3rem;
+    border: solid  2px var(--noir);
+}
+#services .wrap .content .buttons .b1{
+    background-color: var(--noir);
+    color: white;
+}
+#about {
+    padding-top: 30rem;
+}
